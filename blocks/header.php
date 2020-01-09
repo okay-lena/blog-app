@@ -23,3 +23,15 @@
   </div>
 </nav>
 </header>
+<script>
+  const toggler = document.getElementById('navbar-toggler')
+  const menu = document.getElementById('navbarCollapse');
+
+  toggler.addEventListener('click', function() {
+    if (menu.getAttribute('class').includes('show')) {
+      menu.setAttribute('class', 'collapse navbar-collapse')
+    } else {
+      menu.setAttribute('class', 'collapse navbar-collapse show')
+    }
+  })
+</script>
