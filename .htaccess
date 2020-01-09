@@ -1,0 +1,15 @@
+<IfModule dir_module>
+    DirectoryIndex index.php
+</IfModule>
+
+ServerSignature Off
+
+AddDefaultCharset UTF-8
+
+ErrorDocument 404 /error.php
+
+RewriteEngine on
+RewriteRule ^registration?$ /registration.php [NC]
+RewriteRule ^login?$ /login.php [NC]
+RewriteRule ^new-post?$ /new_post.php [NC]
+RewriteRule ^post?$ /post.php [NC]
